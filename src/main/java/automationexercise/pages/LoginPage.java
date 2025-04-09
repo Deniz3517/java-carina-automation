@@ -14,7 +14,7 @@ public class LoginPage extends AbstractPage {
     @FindBy(xpath = "//input[@name='password']")
     private ExtendedWebElement passwordField;
 
-    @FindBy(xpath = "//button[text()='Login']\n")
+    @FindBy(xpath = "//button[text()='Login']")
     private ExtendedWebElement loginButton;
 
     public LoginPage(WebDriver driver) {
