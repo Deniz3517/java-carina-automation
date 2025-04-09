@@ -15,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 public class LoginFunctionalityTest implements IAbstractTest {
 
     @Test
-    @TestLabel(name = "Login", value = { "web", "Smoke" })
+    @TestLabel(name = "Test-0001", value = { "web", "Smoke" })
     public void testLoginFunctionality() {
         getDriver().get(Configuration.getRequired("url"));
 
