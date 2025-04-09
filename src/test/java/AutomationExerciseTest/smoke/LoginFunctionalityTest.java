@@ -1,4 +1,4 @@
-package AutomationExerciseTest.Smoke;
+package AutomationExerciseTest.smoke;
 
 import com.zebrunner.agent.core.annotation.TestLabel;
 import com.zebrunner.carina.core.IAbstractTest;
