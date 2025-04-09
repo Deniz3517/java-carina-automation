@@ -8,13 +8,13 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends AbstractPage {
 
-    @FindBy(id = "login-email")
+    @FindBy(xpath = "//input[@name='email']")
     private ExtendedWebElement emailField;
 
-    @FindBy(id = "login-password")
+    @FindBy(xpath = "//input[@name='password']")
     private ExtendedWebElement passwordField;
 
-    @FindBy(id = "login-submit")
+    @FindBy(xpath = "//button[text()='Login']\n")
     private ExtendedWebElement loginButton;
 
     public LoginPage(WebDriver driver) {

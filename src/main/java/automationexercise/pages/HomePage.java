@@ -8,8 +8,9 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends AbstractPage {
 
-    @FindBy(xpath = "//button[p[text()='accept']]")
+    @FindBy(className = "fc-button")
     private ExtendedWebElement cookieAcceptButton;
+
 
     public HomePage(WebDriver driver) {
         super(driver);
