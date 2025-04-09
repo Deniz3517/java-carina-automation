@@ -1,4 +1,6 @@
+package AutomationExerciseTest.Smoke;
 
+import com.zebrunner.agent.core.annotation.TestLabel;
 import com.zebrunner.carina.core.IAbstractTest;
 import com.zebrunner.carina.utils.config.Configuration;
 import org.openqa.selenium.By;
@@ -13,6 +15,7 @@ import static org.testng.Assert.assertTrue;
 public class LoginFunctionalityTest implements IAbstractTest {
 
     @Test
+    @TestLabel(name = "Login", value = { "web", "Smoke" })
     public void testLoginFunctionality() {
         getDriver().get(Configuration.getRequired("url"));
 
